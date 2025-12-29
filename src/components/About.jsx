@@ -1,8 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 
-import fotoEmpresa from '../assets/images/foto-empresa.jpg'; 
-
 const stats = [
   { label: "Anos de Mercado", value: "+20" },
   { label: "Clientes Atendidos", value: "+1.5k" },
@@ -35,7 +33,7 @@ const About = () => {
           
           <div className="relative" data-aos="fade-right">
             <img
-              src={fotoEmpresa}
+              src="./foto-empresa.jpg" 
               alt="Equipe LED Informática"
               className="rounded-lg shadow-xl w-full object-cover h-[400px]"
             />
