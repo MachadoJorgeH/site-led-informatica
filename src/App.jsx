@@ -12,8 +12,8 @@ import BackToTop from './components/BackToTop';
 
 import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
-import ScrollProgress from './components/ScrollProgress';
 import NotFound from './pages/NotFound';
+import ScrollProgress from './components/ScrollProgress';
 
 function App() {
   
@@ -26,9 +26,11 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/site-led-informatica">
+      
       <ScrollProgress />
       <ScrollToTop />
+      
       <div className="flex flex-col min-h-screen relative overflow-x-hidden"> 
         <Header />
         
