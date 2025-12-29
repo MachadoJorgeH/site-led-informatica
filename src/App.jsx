@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// MUDANÇA 1: Importamos HashRouter e apelidamos de Router
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/site-led-informatica">
+    <Router>
       
       <ScrollProgress />
       <ScrollToTop />
