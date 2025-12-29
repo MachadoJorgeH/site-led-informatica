@@ -7,6 +7,12 @@
 
 > Website institucional moderno e responsivo desenvolvido para a LED Informática, focado em soluções de automação comercial e tecnologia.
 
+## 🔗 Link do Projeto (Deploy)
+
+Confira o projeto rodando em produção através do GitHub Pages:
+
+### 👉 [Clique aqui para acessar o Site Online](https://machadojorgeh.github.io/site-led-informatica/)
+
 ---
 
 ## 📸 Visualização do Projeto
@@ -23,11 +29,11 @@
 |:---:|:---:|
 | ![Downloads](src/assets/images/image4.png) | ![Parceiros](src/assets/images/image5.png) |
 
-| Contato |
-| ![Contato](src/assets/images/image6.png) 
+### Contato
+![Contato](src/assets/images/image6.png) 
 
 ### Responsividade e Mobile
-![Mobile View](src\assets\images\mobileview.png)
+![Mobile View](src/assets/images/mobileview.png)
 
 ---
 
