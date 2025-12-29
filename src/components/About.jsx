@@ -1,6 +1,8 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 
+import fotoEmpresa from '../assets/images/foto-empresa.jpg'; 
+
 const stats = [
   { label: "Anos de Mercado", value: "+20" },
   { label: "Clientes Atendidos", value: "+1.5k" },
@@ -12,6 +14,7 @@ const About = () => {
   return (
     <section id="empresa" className="py-20 bg-white bg-dot-pattern">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div 
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 border-b border-gray-100 pb-12"
           data-aos="fade-up"
@@ -27,13 +30,16 @@ const About = () => {
             </div>
           ))}
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
           <div className="relative" data-aos="fade-right">
             <img
-              src="http://ledinf.com.br/img/frontend/base/foto-empresa.jpg"
+              src={fotoEmpresa}
               alt="Equipe LED Informática"
               className="rounded-lg shadow-xl w-full object-cover h-[400px]"
             />
+            
             <div className="absolute -bottom-6 -right-6 bg-led-blue text-white p-6 rounded-lg hidden md:block shadow-lg">
               <p className="font-bold text-4xl">20+</p>
               <p className="text-sm uppercase tracking-wide">Anos de Mercado</p>
@@ -50,13 +56,13 @@ const About = () => {
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               A <strong>LED Informática</strong> não é apenas uma empresa de
-              software. Somos uma empresa de assistencia técnica presente no
-              mercado a 20 anos, prestando serviços relacionados à Automação
+              software. Somos uma empresa de assistência técnica presente no
+              mercado há 20 anos, prestando serviços relacionados à Automação
               Comercial e desenvolvendo diversos tipos de soluções customizadas
               para o seu negócio.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Tornar nossos cliente mais competitivos e melhores através de
+              Tornar nossos clientes mais competitivos e melhores através de
               resultados de serviços de qualidade em Tecnologias da informação.
             </p>
 
