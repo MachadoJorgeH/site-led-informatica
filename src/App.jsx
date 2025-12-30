@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// MUDANÇA 1: Importamos HashRouter e apelidamos de Router
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import AOS from 'aos';
