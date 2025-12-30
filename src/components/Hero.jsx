@@ -16,11 +16,14 @@ const Hero = () => {
       className="relative pt-24 pb-32 min-h-[90vh] flex items-center justify-center text-white text-center px-4 overflow-hidden"
     >
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop"
-          alt="Tecnologia Background"
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source media="(min-width: 768px)" srcSet="./hero-desktop.webp" />
+          <img
+            src="./hero-mobile.webp"
+            alt="Tecnologia e Automação"
+            className="w-full h-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/80"></div>
       </div>
 
