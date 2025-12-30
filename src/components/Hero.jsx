@@ -91,6 +91,7 @@ const Hero = () => {
           href="#empresa"
           onClick={(e) => handleScroll(e, "empresa")}
           className="text-white opacity-80 hover:opacity-100 transition cursor-pointer"
+          aria-label="Rolar para baixo para seção A Empresa"
         >
           <ChevronDown className="w-12 h-12 drop-shadow-md" />
         </a>
