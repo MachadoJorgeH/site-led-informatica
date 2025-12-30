@@ -33,8 +33,10 @@ const About = () => {
           
           <div className="relative" data-aos="fade-right">
             <img
-              src="./foto-empresa.jpg" 
+              src="./foto-empresa.webp" 
               alt="Equipe LED Informática"
+              width="600"
+              height="400"
               className="rounded-lg shadow-xl w-full object-cover h-[400px]"
             />
             
