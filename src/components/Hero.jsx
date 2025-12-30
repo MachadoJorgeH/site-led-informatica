@@ -2,6 +2,14 @@ import React from "react";
 import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -44,13 +52,15 @@ const Hero = () => {
         >
           <a
             href="#contato"
-            className="btn-shine bg-led-light hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition duration-300 shadow-lg hover:shadow-blue-500/50 transform hover:-translate-y-1"
+            onClick={(e) => handleScroll(e, "contato")}
+            className="btn-shine bg-led-light hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition duration-300 shadow-lg hover:shadow-blue-500/50 transform hover:-translate-y-1 cursor-pointer"
           >
             Fale Conosco
           </a>
           <a
             href="#servicos"
-            className="bg-transparent border-2 border-white hover:bg-white hover:text-led-blue text-white px-8 py-3 rounded-lg font-bold text-lg transition duration-300"
+            onClick={(e) => handleScroll(e, "servicos")}
+            className="bg-transparent border-2 border-white hover:bg-white hover:text-led-blue text-white px-8 py-3 rounded-lg font-bold text-lg transition duration-300 cursor-pointer"
           >
             Nossos Serviços
           </a>
@@ -76,6 +86,7 @@ const Hero = () => {
       <div className="absolute bottom-16 md:bottom-24 left-0 w-full flex justify-center animate-bounce z-20">
         <a
           href="#empresa"
+          onClick={(e) => handleScroll(e, "empresa")}
           className="text-white opacity-80 hover:opacity-100 transition cursor-pointer"
         >
           <ChevronDown className="w-12 h-12 drop-shadow-md" />
