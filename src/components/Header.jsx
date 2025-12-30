@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { User, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
-import logoLed from '../assets/images/logo_led_informatica.png';
+import logoLed from '../assets/images/logo_led_informatica.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
